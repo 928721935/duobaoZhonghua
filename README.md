@@ -23,3 +23,4 @@
 1.将sql/jianghu.sql数据初始化到数据库  
 2.修改application.yml里面的数据库信息  
 
+![img](https://github.com/lanshengzhong/mina_alan/blob/master/screenshot/2.gif)
