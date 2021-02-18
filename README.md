@@ -9,6 +9,11 @@
 演示地址 : 略
 
 ## 项目信息  
+>环境
+jdk1.8,mysql  
+
+>框架
+springmvc,mybatisplus,springboot,jsp
 
 >功能说明
 
