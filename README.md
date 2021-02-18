@@ -23,7 +23,7 @@
 
 1.将sql/jianghu.sql数据初始化到数据库  
 2.修改application.yml里面的数据库信息  
-
+3.账号928721935密码111111
 预览图  
 ![img](https://github.com/928721935/previewPic/blob/master/pic/pic1.png)  
 ![img](https://github.com/928721935/previewPic/blob/master/pic/pic2.png)  
