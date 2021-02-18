@@ -1,0 +1,41 @@
+server:
+  port: 8180
+  servlet:
+    context-path: /duobao
+
+#logging:
+#  config: classpath:logback-spring.xml
+spring:
+#  mvc:
+#    view:
+#      prefix: /WEB-INF/
+#      suffix: .jsp
+  datasource:
+    username: root
+    password: root
+    url: jdbc:mysql://localhost:3306/jianghu?useUnicode=true&characterEncoding=UTF-8&serverTimezone=GMT%2B8
+    driver-class-name: com.mysql.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+  redis:
+    remote: true
+    host: 192.168.1.36
+    port: 6379
+    password: jida123456
+    lettuce:
+      pool:
+        max-active: 8
+        max-wait: -1
+        max-idle: 8
+        min-idle: 0
+      shutdown-timeout: 5000
+  quartz:
+    #持久化到数据库方式
+    job-store-type: jdbc
+mybatis-plus:
+  mapper-locations: classpath*:mapper/*.xml
+  configuration:
+    map-underscore-to-camel-case: false
+logging:
+  level:
+    com.jida.mapper: debug
+

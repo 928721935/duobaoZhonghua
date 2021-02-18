@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--    战斗逻辑循环-->
+    <bean id="battleCache" class="com.jida.common.cache.BattleCache"/>
+    <bean id="viewCache" class="com.jida.common.cache.ViewCache"/>
+    <bean id="roleEntityCache" class="com.jida.common.cache.RoleEntityCache"/>
+</beans>

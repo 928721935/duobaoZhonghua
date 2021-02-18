@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jida.mapper.ForumReplyMappper">
+    <select id="getReplyListByPostID" resultType="com.jida.dto.ForumReplyDto">
+        SELECT fr.*, u.peopleName replyerPeopleName FROM forum_reply fr
+            JOIN t_user u ON u.userId = fr.replyerID
+            where fr.postID = #{postID}
+            order by fr.createTime desc,id desc
+            LIMIT ${pageNum},${pageSize}
+    </select>
+
+    <select id="getReplyListCountByPostID" resultType="java.lang.Integer">
+        select count(1) from forum_reply fr where fr.postID = #{postID}
+    </select>
+</mapper>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jida.mapper.ForumPostMapper">
+    <select id="getForumPostList" resultType="com.jida.dto.ForumPostDto">
+        SELECT fp.*, u.peopleName senderPeopleName FROM forum_post fp
+            JOIN t_user u ON u.userId = fp.senderID
+            order by fp.lastReplyTime desc,id desc
+            LIMIT ${pageNum},${pageSize}
+    </select>
+
+    <select id="getTopForumPostList" resultType="com.jida.dto.ForumPostDto">
+        SELECT fp.*, u.peopleName senderPeopleName FROM forum_post fp
+        JOIN t_user u ON u.userId = fp.senderID
+        where fp.top = 1
+        order by fp.createTime desc,id desc
+    </select>
+
+    <select id="getForumPostListCount" resultType="java.lang.Integer">
+        SELECT count(1) FROM forum_post
+    </select>
+
+    <select id="getForumPostByPostID" resultType="com.jida.dto.ForumPostDto">
+        SELECT fp.*, u.peopleName senderPeopleName FROM forum_post fp
+            JOIN t_user u ON u.userId = fp.senderID
+            where fp.id = #{postID}
+    </select>
+</mapper>
