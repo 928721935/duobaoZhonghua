@@ -1,4 +1,4 @@
-# duobaoZhonghua
+## duobaoZhonghua
 >夺宝中华
 >我最喜欢的文字wap武侠游戏
 >游戏开发中，目前版本尚不能正常运行，只可参考学习。
@@ -16,6 +16,6 @@
 >安装说明：  
 
 1.将sql/jianghu.sql数据初始化到数据库
-2.修改application.yml里面的数据库信息 
+2.修改application.yml里面的数据库信息
 
 
