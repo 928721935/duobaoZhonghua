@@ -35,7 +35,7 @@ springmvc,mybatisplus,springboot,jsp
 ![img](https://github.com/928721935/previewPic/blob/master/pic/pic3.png)  
 ![img](https://github.com/928721935/previewPic/blob/master/pic/pic4.png)  
 ![img](https://github.com/928721935/previewPic/blob/master/pic/pic5.png)  
-预览文件看不到的话，可以在hosts文件加上  
+预览图看不到的话，可以在hosts文件加上  
 140.82.113.3      github.com  
 140.82.112.3      gist.github.com  
 185.199.108.153   assets-cdn.github.com  
